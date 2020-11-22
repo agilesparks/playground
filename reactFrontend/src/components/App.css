@@ -1,0 +1,209 @@
+
+.divider{
+  width:20px;
+  height:auto;
+  display:inline-block;
+}
+
+.taki-title {
+  grid-area: grid-title; 
+  text-align: center;
+}
+.taki-management {
+  grid-area: grid-management; 
+  text-align: center;
+}
+.taki-cards {
+  grid-area: grid-cards;
+  text-align: center;
+}
+.taki-sprcial-action {
+  grid-area: grid-special-action; 
+  text-align: center;
+}
+.taki-players {
+  grid-area: grid-players; 
+  text-align: center;
+}
+.taki-cards-on-table {
+  grid-area: grid-cards-on-table; 
+  text-align: center;
+}
+
+.cards-list {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-gap: 8px;
+  background-color: #2196F3;
+  padding: 8px;
+}
+
+.players-list {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 8px;
+  background-color: #2196F3;
+  padding: 8px;
+}
+
+.players-list > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+.scaled {
+  transform: scale(1.1); /* Equal to scaleX(0.7) scaleY(0.7) */
+}
+
+.taki-grid-container {
+  display: grid;
+  grid-template-areas:
+    'grid-title grid-title'
+    'grid-management grid-management'
+    'grid-cards grid-cards'
+    'grid-special-action grid-special-action'
+    'grid-players grid-cards-on-table';
+  grid-gap: 8px;
+  padding: 8px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.flexGrid {
+  display: flex;
+  flex-direction: row;
+  border: 5px;
+  border-color: #282c34;
+  justify-content: center
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  border: 5px;
+  border-color: #282c34;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  border: 5px;
+  border-color: #282c34;
+}
+
+.flexRowCenter {
+  display: flex;
+  flex-direction: row;
+  border: 5px;
+  border-color: #282c34;
+  justify-content: center;
+}
+.flexColCenter {
+  display: flex;
+  flex-direction: column;
+  border: 5px;
+  border-color: #282c34;
+  justify-content: center
+}
+
+.cell {
+  display: flex;
+  border: 1px solid black;
+  border-collapse: collapse;
+  vertical-align:middle;
+  text-align: center;
+  font-size: 10px;
+  resize: none;
+}
+
+.cellTitle {
+  display: flex;
+  border: 1px solid black;
+  border-collapse: collapse;
+  vertical-align:middle;
+  text-align: center;
+  font-size: 10px;
+  resize: none;
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.takeCard {
+  padding: 12px 12px;
+  font-size:15px ; 
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  padding: 12px 12px;
+  font-size:20px ;
+}
+
+.card-no-padding {
+  background-color: rgb(255, 255, 255);
+  
+  font-size:20px ;
+}
+
+.greenCard {
+  background-color: #4CAF50;
+  padding: 12px 12px;
+  font-size:20px ;
+}
+.yellowCard {
+  background-color: yellow;
+  padding: 12px 12px;
+  font-size:20px ;
+}
+.blueCard {
+  background-color:rgb(0, 140, 255);
+  padding: 12px 12px;
+  font-size:20px ;
+}
+.redCard {
+  background-color: red;
+  padding: 12px 12px;
+  font-size:20px ;
+}
+
+.specialCard {
+  background-color: white;
+  padding: 12px 12px;
+  font-size:15px ;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
